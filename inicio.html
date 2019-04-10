@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-4-latest.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <body>
 
@@ -15,7 +18,7 @@
                     class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
             <a href="#juegos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Juegos</a>
-            <a href="#xbox" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Xbox</a>
+            <a href="#tienda" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tienda</a>
             <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contacto</a>
             <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-padding-large w3-button" title="More">Mas+ <i class="fa fa-caret-down"></i></button>
@@ -25,15 +28,18 @@
                     <a href="nosotros.html" class="w3-bar-item w3-button">Nosotros</a>
                 </div>
             </div>
-            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
-                    class="fa fa-search"></i></a>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+                <i class="fa fa-search"></i></a>
+
+            <h2 class="titulo">Predator Games</h2>
         </div>
+
     </div>
 
 
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
         <a href="#juegos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Juegos</a>
-        <a href="#xbox" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Xbox</a>
+        <a href="#tienda" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tienda</a>
         <a href="#contacto" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contacto</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mas</a>
     </div>
@@ -63,7 +69,7 @@
             </div>
         </div>
 
-        <!-- Games -->
+        <!-- juegos -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="juegos">
             <h2 class="w3-wide">Juegos</h2>
             <p class="w3-opacity"><i>
@@ -76,13 +82,11 @@
             <div class="w3-row w3-padding-32">
                 <div class="w3-third">
                     <p>Apex legends</p>
-                    <img src="img/apex.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
-                        style="width:90%">
+                    <img src="img/apex.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
                 </div>
                 <div class="w3-third">
                     <p>Forza horizon 4</p>
-                    <img src="img/forza4.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
-                        style="width:90%">
+                    <img src="img/forza4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
                 </div>
                 <div class="w3-third">
                     <p>Halo master chief collection</p>
@@ -92,73 +96,39 @@
 
         </div>
 
-        <!-- Xbox -->
-        <div class="w3-black" id="xbox">
+        <!-- Tienda -->
+        <div class="w3-black" id="tienda">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-                <h2 class="w3-wide w3-center">Xbox</h2>
-                <p class="w3-opacity w3-center"><i>Texto</i></p><br>
+                <h2 class="w3-wide w3-center">Tienda</h2>
+                <p class="w3-opacity w3-center"><i>Registre su compra aqui...!</i></p><br>
 
-                <ul class="w3-ul w3-border w3-white w3-text-grey">
-                    <li class="w3-padding">Texto <span class="w3-tag w3-red w3-margin-left">Texto</span></li>
-                    <li class="w3-padding">Texto <span class="w3-tag w3-red w3-margin-left">Texto</span></li>
-                    <li class="w3-padding">Texto <span class="w3-badge w3-right w3-margin-right">Texto</span></li>
-                </ul>
+                <div class="w3-center">
+                    <button class="w3-button w3-white  w3-margin-bottom"
+                        onclick="document.getElementById('compras').style.display='block'">Registrar pedido</button>
+                </div>
 
                 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
                     <div class="w3-third w3-margin-bottom">
-                        <img src="img/apex.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                        <img src="img/resident7.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
-                            <p><b>Texto</b></p>
-                            <p class="w3-opacity">Texto</p>
-                            <p>Texto</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Texto</button>
+                            <p class="w3-opacity">Resident evil 7</p>
+                            <p class="w3-opacity">$199.999</p>
                         </div>
                     </div>
                     <div class="w3-third w3-margin-bottom">
-                        <img src="img/apex.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                        <img src="img/halo-5.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
-                            <p><b>Texto</b></p>
-                            <p class="w3-opacity">Texto</p>
-                            <p>Texto</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Texto</button>
+                            <p class="w3-opacity">Halo 5 guardians</p>
+                            <p class="w3-opacity">$145.000</p>
                         </div>
                     </div>
                     <div class="w3-third w3-margin-bottom">
-                        <img src="img/apex.jpg" alt="San Francisco" style="width:100%"
-                            class="w3-hover-opacity">
+                        <img src="img/gears4.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
-                            <p><b>Texto</b></p>
-                            <p class="w3-opacity">Texto</p>
-                            <p>Texto</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Texto</button>
+                            <p class="w3-opacity">Gears of war 4</p>
+                            <p class="w3-opacity">$155.000</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ticket Modal -->
-        <div id="ticketModal" class="w3-modal">
-            <div class="w3-modal-content w3-animate-top w3-card-4">
-                <header class="w3-container w3-teal w3-center w3-padding-32">
-                    <span onclick="document.getElementById('ticketModal').style.display='none'"
-                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-                </header>
-                <div class="w3-container">
-                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-                    <input class="w3-input w3-border" type="text" placeholder="How many?">
-                    <p><label><i class="fa fa-user"></i> Send To</label></p>
-                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i
-                            class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section"
-                        onclick="document.getElementById('ticketModal').style.display='none'">Close <i
-                            class="fa fa-remove"></i></button>
-                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
                 </div>
             </div>
         </div>
@@ -174,13 +144,14 @@
                     <i class="fa fa-envelope" style="width:30px"> </i> Correo: predatorGames@mail.com<br>
                 </div>
                 <div class="w3-col m6">
-                    <form action="/action_page.php" target="_blank">
+                    <form href="">
                         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                             <div class="w3-half">
                                 <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
                             </div>
                             <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Email">
+                                <input class="w3-input w3-border" type="text" placeholder="Correo" required
+                                    name="Email">
                             </div>
                         </div>
                         <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
@@ -192,15 +163,29 @@
 
     </div>
 
+    <!-- Modal -->
+    <div id="compras" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('compras').style.display='none'"
+                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Registre su compra</h2>
+            </header>
+            <div class="w3-container">
+                <div id="compra" class="table table-striped table-dar"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Redes -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <footer class="w3-container w3-center w3-light-grey w3-xlarge">
+
+        <div class="w3-row w3-padding-32">
+            <img src="img/twitter.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:3%">
+            <img src="img/facebook.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:3%">
+            <img src="img/unad.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:8%">
+        </div>
+        </p>
     </footer>
 </body>
 
