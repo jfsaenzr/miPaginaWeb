@@ -22,6 +22,11 @@ body {
     margin: 0
 }
 
+.foto img{
+    border-radius: 200px;
+    opacity: 0.8;
+}
+
 .titulo{
     font-family: 'Bungee Inline', cursive;
     text-align: right;
@@ -1438,7 +1443,7 @@ a {
 
 .w3-teal, .w3-hover-teal:hover {
     color: #fff!important;
-    background-color: #009688!important
+    background-color: #000000D9!important
 }
 
 .w3-yellow, .w3-hover-yellow:hover {
@@ -1463,7 +1468,7 @@ a {
 
 .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
     color: #000!important;
-    background-color: #000000D9!important
+    background-color: #DFDFDF!important
 }
 
 .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
